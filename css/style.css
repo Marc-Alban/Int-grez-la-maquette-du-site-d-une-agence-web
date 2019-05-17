@@ -1,0 +1,589 @@
+/*Fonts*/
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular.ttf") format("truetype");
+ }
+
+/* All */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", Arial, sans-serif;
+}
+
+body {
+    
+  font-family: 'Roboto', sans-serif;
+  color: rgb(119,119,119);
+  margin: 0;
+  font-size: 16px;
+  width: 100%;
+}
+
+h1{
+  font-size: 250%;
+  font-weight: 900;
+}
+
+h2{
+  text-align: center;
+  text-transform: uppercase;
+  color: rgb(39,39,39);
+  font-weight: bold;
+}
+
+
+hr{
+  width: 10%;
+  margin: 10px auto;
+  opacity: 0.3;
+}
+
+/* Navigation */
+.top-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #fff;
+  color: #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  }
+
+
+
+  /* Nav  responsive*/
+  .menu{
+    display: none;
+  }
+
+
+  .fa-bars {
+    display: flex;
+    color: #3491b2;
+    font-size: 1.5em;
+    padding-top: 0.7em;
+    position: absolute;
+    right: 15px;
+  }
+
+  /* Main */
+  main{
+    margin-top: 90px;
+  }
+
+
+/* Slider */
+
+#slider, .slide {
+  height: 600px; /* height for menu and slide*/
+  color: white;
+  font-weight: bold;
+  overflow: hidden;
+  width: 100%;
+}
+
+#slider {
+  position: relative;
+}
+
+
+.body_slide {
+  position: relative; /* link position in absolu*/
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 550px;
+}
+
+#one .body_slide {
+  background: url('../images/slider/bg1.jpg') no-repeat center;
+  background-size: cover;
+  z-index: 0;
+}
+
+#two .body_slide {
+  background: url('../images/slider/bg2.jpg') no-repeat center;
+  background-size: cover;
+  z-index: 0;
+}
+
+
+/* take link in navigation slider */
+.slide nav a {
+  z-index: 2;
+  background: rgba(0,0,0,.4);
+  color: #fff;
+  text-decoration: none;
+  height: 70px;
+  width: 70px;
+  border-radius: 35px;
+  position: absolute;
+  top: 45%;
+}
+.slide nav a:hover {
+  background: rgba(0,0,0,.8);
+}
+.prev {
+  left: -35px;
+}
+
+/* arrow left */
+.prev .fa-angle-left {
+  font-size: 2em;
+  position: relative;
+  top: 20px;
+  left: 40px;
+}
+
+.next {
+  right: -35px;
+}
+
+.next .fa-angle-right {
+  font-size: 2em;
+  position: relative;
+  top: 20px;
+  left: 15px;
+}
+
+
+
+/* Text slider */
+
+  /* Slider */
+  .text_slide {
+    margin: 15%;
+    max-width: 700px;
+  }
+
+.text_slide h1 span {
+  color: rgb(92,173,211);
+}
+.text_slide p {
+   margin-bottom: 40px;
+}
+
+/* Effect boutton*/
+.text_slide a { 
+  color: white;
+  background-color: rgb(92,173,211);
+  padding: 10px 15px;
+  border-radius: 3px;
+  border-bottom: 3px solid rgb(68,148,187);
+  text-decoration: none;
+}
+
+
+
+/* Service */
+
+#service{
+  margin-bottom: 5em;
+}
+
+
+.trait{
+  position: relative;
+  margin: 20px 0;
+}
+
+.trait > .petitCercle{
+  position: absolute;
+  left: 47.4%;
+}
+
+/* subtitles */
+#service p {
+  text-align: center;
+}
+
+.blocService img{
+    width: 100%;
+}
+
+.blocService ul h3 {
+  color: black;
+  text-align: center;
+}
+
+.blocService li{
+  list-style: none;
+}
+
+/* Icons */
+
+.blocService li > .cercleService {
+  width: 10%;
+  margin: 1em auto;
+}
+
+.cercle{
+  background: #fff;
+  border: 1px solid #00000054;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 5px;
+}
+
+.petitCercle{
+  background: #31a1c0;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  bottom: -10px;
+}
+
+.blocService i {
+  font-size: 2em;
+  color: #31a1c0;
+}
+
+
+/* Project */
+
+#projets {
+  background-color: rgb(240, 236, 236);
+  padding: 50px 0;
+}
+
+/* title */
+#projets{
+  text-align: center
+}
+
+/* body project */
+#blocProjets .listeBtn ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 50px 0;
+} 
+
+#blocProjets .listeBtn li {
+  padding: 8px 10px;
+  background-color: rgb(229,229,229);
+    /* Position triangle */
+    position: relative;
+}
+
+.fleche{
+  position: absolute;
+  color: #808080;
+  width: 0;
+  padding: 0;
+  top: 100%;
+  left: 35%;
+}
+
+.bas{
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 15px solid #468cad;
+}
+
+
+#projets .select, #projets li:hover  {
+  background-color: rgb(92,173,211) !important;
+  color: white;
+  font-weight: 300;
+  border-bottom: 4px solid rgb(70,140,173);
+  position: relative;
+  cursor: pointer;
+}
+
+
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+figure img {
+  width: 100%;
+}
+
+/* Legend Position*/
+figure { 
+  position: relative; 
+  overflow: hidden; 
+  height: 175px;
+  width: 260px;
+  margin: 15px;
+  background-color: rgba(0,0,0,0);
+}
+
+/* Hover Legend */ 
+figcaption {
+  position: absolute;
+  background: rgba(0,0,0,0.4);
+  color: white;
+  width: 100%;
+  padding: 0 10px;
+  opacity: 0;
+  bottom: -30%;
+  left: 0;
+  transition: all 0.6s ease;
+  text-align: left;
+  padding: 1em;
+}
+
+figure:hover figcaption {
+  opacity: 1;
+  bottom: 0;
+}
+
+
+/* blue bubble*/
+figcaption div {
+  width: 35px;
+  height: 35px;
+  background-color: rgb(69,144,177);
+  border-radius: 21.5px;
+  border: 2px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 70%;
+  top: -20px;
+}
+
+
+/* Contact */
+#contact{
+  position:relative;
+}
+
+#contact span {
+ color: rgb(77, 77, 77);
+ font-weight: bold;
+ font-family: "Roboto", Arial, sans-serif;
+}
+
+.google_maps, #conteneurContact{
+  width: 100%;
+  position: absolute;
+  height: 600px;
+}
+
+.google_maps{
+  top:600px;
+}
+
+#conteneurContact {
+  background: rgb(250, 250, 250);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  pointer-events: none;
+}
+
+form{
+  background-color: rgba(255,255,255,.8);
+  width: 300px;
+  height: 70%;
+  margin: 40px 20px;
+  padding: 20px;
+}
+
+form h2 {
+  padding: 10px;
+  margin: 0px;
+  text-align: left;
+}
+
+form p {
+  padding: 10px;
+}
+
+input{
+  width: 100%;
+  height: 25px;
+  border-radius: 3px;
+  margin-bottom: 15px;
+}
+
+::-webkit-input-placeholder{
+  padding: 10px;
+}
+::-ms-input-placeholder{
+  padding: 10px;
+}
+::-moz-placeholder{
+  padding: 10px;
+}
+
+textarea {
+  max-width: 100%;
+  width: 100%;
+  height: 100px;
+  border-radius: 3px;
+
+}
+
+.bouton {
+  color: white;
+  background-color: rgb(92,173,211); 
+  border-bottom: 3px solid rgb(70,140,173);
+  border-radius: 3px;
+  padding: 5px 15px;
+  text-decoration: none;
+}
+
+
+
+
+@media screen and (min-width: 720px){
+
+
+    /* nav bar */
+    .fa-bars{
+      display: none;
+    }
+
+    .menu {
+      display: flex;
+      flex-direction: row;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+  
+    .menu > li {
+      margin: 0 1rem;
+      padding: 30px 0;
+    }
+
+    .menu > li:hover{
+      border-top: 3px solid #4990b0;
+    }
+
+    .menu > .active{
+      border-top: 3px solid #4990b0;
+    }
+
+    .menu > li > a{
+      color: black;
+      text-decoration: none;
+    }
+
+    /* Slider */
+
+    .text_slide {
+      margin: 10%;
+    }
+    
+
+    /* Service*/
+
+    .blocService li > .cercleService {
+      width: 15%;
+      margin: 1em auto;
+  }
+
+  .textService{
+    width: 65%;
+    margin: auto;
+  }
+
+  /* Contact */
+  form{
+    margin: 40px 80px;
+  } 
+
+  .google_maps{
+    top:0;
+  }
+
+  #conteneurContact {
+    background: rgba(92,173,211,.4);
+  }
+}
+
+
+@media screen and (min-width: 1024px){
+
+  /* Service */
+  .blocService img {
+    width: 30%;
+    height: 30%;
+}
+  .blocService li {
+    display: flex;
+    align-items: center;
+  }
+
+  .blocService .textService p, .blocService .textService h3{
+    text-align: left !important;
+
+  }
+
+  .blocService .textService:last-child{
+    width: 78%;
+  }
+
+
+  .blocService li > .cercleService {
+    width: 10%;
+    margin: 1em 0;
+  }
+
+  .textService{
+    width: 70% !important;
+    margin: 20px 30px;
+  }
+
+  .trait > .petitCercle{
+    position: absolute;
+    left: 50%;
+  }
+
+  .blocService {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+  .cercle > .petitCercle {
+    position: absolute;
+    right: -10px;
+    top: 30%;
+  }
+
+  .cercle {
+  width: 50px;
+  height: 50px;
+  }
+
+  .blocService i {
+    font-size: 1.5em;
+  }
+
+  .portfolio {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 1440px){
+  .textService{
+    width: 40% !important;
+  }
+}
+
