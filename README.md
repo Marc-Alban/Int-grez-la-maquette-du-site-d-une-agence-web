@@ -1,4 +1,4 @@
-# projet-html-css-openclassroom
+# projet-1-openclassroom
 
 Vous venez d'être embauché(e) par une agence Web, la WebAgency, qui réalise des sites web pour différents clients. Sophie, la directrice technique de l’agence vous informe que le site actuel est vieillissant et que son équipe a peu de temps pour travailler dessus.
 
